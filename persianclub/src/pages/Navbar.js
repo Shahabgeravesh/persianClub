@@ -4,6 +4,9 @@ import Nav from 'react-bootstrap/Nav'
 const Navbar = () => (
     <Nav variant="pills" defaultActiveKey="/home">
         <Nav.Item>
+            <Nav.Link href="/Login">Login</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
             <Nav.Link href="/">Home</Nav.Link>
         </Nav.Item>
         <Nav.Item>
