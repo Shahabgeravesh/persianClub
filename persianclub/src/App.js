@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Navbar from '../src/pages/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Route path="/" component={Homepage} exact />
-          <Route path="/About" component={About} />
+          <Route path="/about" component={About} />
 
         </div>
       </Router>

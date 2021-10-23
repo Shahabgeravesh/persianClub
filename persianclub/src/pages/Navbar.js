@@ -1,21 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav'
 const Navbar = () => (
-    <nav>
-        <ul>
+    <Nav variant="pills" defaultActiveKey="/home">
+        <Nav.Item>
+            <Nav.Link href="/">Home</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+            <Nav.Link href="/about">About</Nav.Link>
+        </Nav.Item>
 
-            <Link to="/"> Homepage</Link>
-
-
-
-
-            <Link to="/About"> About</Link>
-
-
-
-        </ul>
-
-    </nav>
+    </Nav>
 
 )
 
